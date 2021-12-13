@@ -9,7 +9,7 @@ pipeline {
 				}
 				stage('Build') {
     					steps {
-    					    bat "\"${tool 'MSBuild'}\" Project2017Demo.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:SkipInvalidConfigurations=true /t:build /p:Configuration=Release /p:Platform=\"Any CPU\" /p:DeleteExistingFiles=True /p:publishUrl=\\pc058\c$\Users\pradeep\New folder\"
+    					    bat "\"${tool 'MSBuild'}\" Project2017Demo.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:SkipInvalidConfigurations=true /t:build /p:Configuration=Release /p:Platform=\"Any CPU\" /p:DeleteExistingFiles=True /p:publishUrl=\\pc058\jankins-Demo\"
     					}
 				}
 			}
