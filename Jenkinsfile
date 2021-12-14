@@ -6,7 +6,7 @@ node {
     def msbuildHome = tool 'Default MSBuild'
     def scannerHome = tool 'SonarScanner for MSBuild'
     withSonarQubeEnv() {
-      bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"sonarqube\""
+      bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"nishant\""
       bat "\"${msbuildHome}\\MSBuild.exe\" /t:Rebuild"
       bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" end"
     }
